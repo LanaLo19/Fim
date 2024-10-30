@@ -20,8 +20,8 @@ function processarDados(dados) {
         acc[redesSociais] = (acc[redesSociais] || 0) + 1
         return acc
     }, {})
-    const valores = Object.values(contagemRedesSociais)
-    const labels = Object.keys(contagemRedesSociais)
+    const valores = ['90','5','2','1.5','1']
+    const labels = ['Rio Grande do Sul','Santa Catarina','São Paulo','Paraná','Pernambuco']
 
     const data = [
         {
@@ -54,7 +54,7 @@ function processarDados(dados) {
     }
 
     criarGrafico(data, layout)
-    incluirTexto(`Como no mundo, a amostra de pessoas entrevistadas por mim, demonstra um apreço pelo <span>Instagram</span> em relação a outras redes.`)
+    incluirTexto(`Atualmente o Brasil é o 5° maior produtor de vinhos do hemisfério sul, com aproximadamente 78 mil hectares plantados.`)
 }
 
 redesSociaisFavoritasMinhaEscola()
